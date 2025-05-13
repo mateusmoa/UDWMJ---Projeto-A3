@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>NutriFood - Cadastro Restaurante</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <img src="img/logoh.png" alt="NutriFood" class="logo-header">
+    </header>
+    <div class="main-container">
+        <form id="cadastroRestauranteForm">
+            <h2>Cadastro Restaurante</h2>
+            <label for="nomeRestaurante">Nome do Restaurante:</label>
+            <input type="text" id="nomeRestaurante" required>
+            <label for="razaoSocial">Razão Social:</label>
+            <input type="text" id="razaoSocial" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" required>
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" required>
+            <label for="telefone">Telefone:</label>
+            <input type="text" id="telefone" required>
+            <label for="descricao">Descrição Restaurante:</label>
+            <textarea id="descricao" required></textarea>
+            <label for="banner">Mini banner do restaurante:</label>
+            <input type="file" id="banner">
+            <button type="submit">Cadastrar</button>
+            <button type="button" class="secondary" onclick="window.location='login-restaurante.html'">Cancelar</button>
+        </form>
+    </div>
+    <footer style="text-align: center; margin-bottom: 15px">
+      © 2025 NutriFood. Todos os direitos reservados.
+    </footer>
+    <script src="js/cadastro-restaurante.js"></script>
+</body>
+
+</html>

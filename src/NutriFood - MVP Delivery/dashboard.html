@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>NutriFood - Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+        <header style="font-family: 'Inter', sans-serif; box-sizing: border-box; width: 100%; background: #eaeaea; padding: 10px 20px; position: relative; height: 50px; display: flex; align-items: center; justify-content: space-between;">
+      <!-- Botão Voltar -->
+      <a href="login-restaurante.html">
+        <img src="img/voltar.svg" alt="Voltar" style="width: 30px; height: 40px; cursor: pointer; margin-right: 20%;">
+      </a></a>
+
+      <!-- Logo -->
+      <img src="img/logoh.png" alt="NutriFood" style="height: 50px; object-fit: contain; margin-left: -77%;">
+
+      <!-- Ações (Pesquisar, Perfil, Carrinho) -->
+      <div style="display: flex; align-items: center; gap: 16px; position: relative;">
+          <!-- Botão Pesquisar -->
+          <img src="img/statusDoRestaurante.svg" alt="Buscar" style="width: 120px; height: 28px; cursor: pointer;">
+
+          <!-- Perfil -->
+          <img src="img/PerfilRestaurante.svg" alt="Perfil" style="width: 40px; height: 40px; object-fit: cover; cursor: pointer;">
+
+          <!-- Carrinho com contador -->
+          <div style="position: relative;">
+            <img src="img/Configurações.svg" alt="Carrinho" style="width: 32px; height: 32px; cursor: pointer;">
+            <div style="position: absolute; top: -8px; right: -10px; background: #65a900; color: #003f12; font-size: 14px; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; border: 2px solid white;">
+              4
+            </div>
+        </div>
+      </div>
+    </header>
+    <div class="main-container" id="dashboard"></div>
+    <footer style="text-align: center; margin-bottom: 15px">
+      © 2025 NutriFood. Todos os direitos reservados.
+    </footer>
+    <br/>
+    <footer style="text-align: center; margin-bottom: 15px">
+      entre em contato conosco:
+    </footer>
+    <div style="text-align: center">
+      <button style="background-color: transparent; border: none; cursor: pointer" onclick="window.location.href='contact.html';">
+        <img src="img/icon.png" alt="Ícone" style="width: 50px; height: 36.48px"/></button>
+    </div>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

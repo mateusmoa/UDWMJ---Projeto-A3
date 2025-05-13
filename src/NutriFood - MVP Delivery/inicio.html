@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>NutriFood - Início</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            background: url('img/background.png') repeat;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #eaeaea;
+            padding: 0;
+            margin: 0;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo-header {
+            height: 38px;
+            margin-left: 16px;
+        }
+        .btn-entrar {
+            margin-right: 16px;
+            margin-top: 8px;
+            background: #388e3c;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 6px 18px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .btn-entrar:hover {
+            background: #256029;
+        }
+        .center-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: calc(100vh - 48px);
+        }
+        .logo-main {
+            width: 220px;
+            margin-bottom: 10px;
+            margin-top: 30px;
+        }
+        .bem-vindo {
+            color: #388e3c;
+            font-size: 1.3em;
+            margin-bottom: 0;
+            margin-top: 0;
+            font-weight: 500;
+        }
+        .subtitulo {
+            color: #8bc34a;
+            font-size: 1em;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        .descricao {
+            color: #222;
+            font-size: 1em;
+            margin-bottom: 30px;
+            margin-top: 0;
+        }
+        .botoes-cadastro {
+            display: flex;
+            gap: 40px;
+            margin-top: 30px;
+        }
+        .btn-large {
+            width: 350px;
+            max-width: 90vw;
+            font-size: 1.2em;
+            margin: 0;
+            padding: 14px 0;
+            background: #388e3c;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.2s, transform 0.1s;
+            box-shadow: 0 2px 8px #0001;
+        }
+        .btn-large:hover {
+            background: #256029;
+        }
+        @media (max-width: 900px) {
+            .botoes-cadastro {
+                flex-direction: column;
+                gap: 20px;
+            }
+            .btn-large {
+                width: 90vw;
+            }
+        }
+    </style>
+</head>
+<body class="bg-pattern">
+    <header>
+        <img src="img/logoh.png" alt="NutriFood" class="logo-header">
+        <button class="btn-entrar" onclick="window.location='login-restaurante.html'">Entrar</button>
+    </header>
+    <div class="center-content">
+        <img src="img/logo.png" alt="NutriFood" class="logo-main">
+        <h2 class="bem-vindo">Bem&nbsp;&nbsp;–&nbsp;&nbsp;Vindo ao NutriFood</h2>
+        <div class="subtitulo">Seu aplicativo de nutrição e alimentação saudável</div>
+        <div class="descricao">Escolha uma opção para continuar</div>
+        <div class="botoes-cadastro">
+            <button class="btn-large" onclick="window.location='cadastro-usuario.html'">Cadastro Usuário</button>
+            <button class="btn-large" onclick="window.location='cadastro-restaurante.html'">Cadastro Restaurantes</button>
+        </div>
+    </div>
+    <footer style="text-align: center; margin-bottom: 15px">
+      © 2025 NutriFood. Todos os direitos reservados.
+    </footer>
+    <script src="js/inicio.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>NutriFood - Cadastro Usuário</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <img src="img/logoh.png" alt="NutriFood" class="logo-header" />
+    </header>
+    <div class="main-container">
+      <form id="cadastroUsuarioForm">
+        <h2>Cadastro Usuário</h2>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" required />
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" required />
+        <label for="telefone">Telefone:</label>
+        <input type="text" id="telefone" required />
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" required />
+        <fieldset style="margin-top: 10px">
+          <legend>Preferências Alimentares</legend>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-left: 20px; margin-top: 10px; margin-bottom: 10px">
+            <!-- Primeira coluna -->
+            <div style="display: flex; flex-direction: column; gap: 10px">
+              <label><input type="checkbox" /> Sem Glúten</label>
+              <label><input type="checkbox" /> Sem Ovos</label>
+              <label><input type="checkbox" /> Vegano</label>
+              <label><input type="checkbox" /> Low Carb</label>
+              <label
+                ><input type="checkbox" /> Sem Peixes e Frutos do Mar</label
+              >
+            </div>
+
+            <!-- Segunda coluna -->
+            <div style="display: flex; flex-direction: column; gap: 10px">
+              <label><input type="checkbox" /> Vegetariano</label>
+              <label><input type="checkbox" /> Sem Lactose</label>
+              <label><input type="checkbox" /> Sem Nozes</label>
+              <label><input type="checkbox" /> Sem Amendoim</label>
+            </div>
+          </div>
+        </fieldset>
+        <button type="submit">Cadastrar</button>
+        <button
+          type="button"
+          class="secondary"
+          onclick="window.location='login-usuario.html'"
+        >
+          Cancelar
+        </button>
+      </form>
+    </div>
+    <footer style="text-align: center; margin-bottom: 15px">
+      © 2025 NutriFood. Todos os direitos reservados.
+    </footer>
+    <script src="js/cadastro-usuario.js"></script>
+  </body>
+</html>

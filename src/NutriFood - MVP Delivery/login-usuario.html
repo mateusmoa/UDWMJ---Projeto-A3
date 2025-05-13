@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>NutriFood - Login Usuário</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <img src="img/logoh.png" alt="NutriFood" class="logo-header">
+    </header>
+    <div class="main-container">
+        <form id="loginUsuarioForm">
+            <h2>Login Usuário</h2>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" required>
+            <button type="submit">Entrar</button>
+            <button type="button" class="secondary" onclick="window.location='cadastro-usuario.html'">Criar Conta</button>
+            <button type="button" onclick="window.location='login-restaurante.html'">Entrar como Restaurante</button>
+        </form>
+    </div>
+    <footer style="text-align: center; margin-bottom: 15px">
+      © 2025 NutriFood. Todos os direitos reservados.
+    </footer>
+    <script src="js/login-usuario.js"></script>
+</body>
+</html>
