@@ -1,0 +1,103 @@
+.container {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filters input,
+.filters select {
+  padding: 8px;
+  font-size: 14px;
+  flex: 1 1 150px;
+}
+
+.filters button {
+  padding: 10px 16px;
+  background-color: #1a7f37;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.results {
+  display: grid;
+  gap: 16px;
+}
+
+.card {
+  display: flex;
+  background: #f4f4f4;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.info {
+  padding: 12px;
+  flex: 1;
+}
+
+.info h4 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.info button {
+  margin-top: 8px;
+  padding: 8px 12px;
+  background-color: #1a7f37;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.mapContainer {
+  margin-top: 30px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+
+@media (max-width: 600px) {
+  .filters {
+    flex-direction: column;
+  }
+
+  .filters input,
+  .filters select {
+    width: 100%;
+  }
+
+  .card {
+    flex-direction: column;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+  }
+}
+

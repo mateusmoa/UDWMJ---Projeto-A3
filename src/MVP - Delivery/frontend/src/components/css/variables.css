@@ -1,0 +1,54 @@
+:root {
+  /* Cores principais */
+  --primary-color: #217a2c;           /* Cor principal dos botões e destaques */
+  --secondary-color: #3ec300;         /* Cor secundária para detalhes */
+  --button-hover-color: #14591a;      /* Cor do botão ao passar o mouse */
+  --text-color: #222;                 /* Cor padrão do texto */
+  --background-color: #fff;           /* Cor de fundo principal */
+  --background-gradient: #fff;        /* Gradiente de fundo (pode ser ajustado) */
+  --border-color: #e0e0e0;            /* Cor das bordas */
+  --success-color: #3ec300;           /* Cor para mensagens de sucesso */
+  --danger-color: #c30000;            /* Cor para mensagens de erro */
+
+  /* Fontes e tamanhos */
+  --font-family: Arial, sans-serif;   /* Fonte padrão */
+  --font-size-base: 1rem;             /* Tamanho base do texto */
+  --font-size-title: 1.5rem;          /* Tamanho para títulos */
+  --font-size-subtitle: 1.1rem;       /* Tamanho para subtítulos */
+  --font-size-small: 0.98rem;         /* Tamanho para textos menores */
+
+  /* Espaçamentos */
+  --spacing-xsmall: 4px;   /* Espaçamento extra pequeno */
+  --spacing-small: 8px;    /* Espaçamento pequeno */
+  --spacing-medium: 16px;  /* Espaçamento médio */
+  --spacing-large: 32px;   /* Espaçamento grande */
+
+  /* Bordas */
+  --border-radius: 8px;         /* Raio padrão das bordas */
+  --border-radius-small: 4px;   /* Raio menor para elementos pequenos */
+
+  /* Sombreamento */
+  --box-shadow: 0 1px 4px #0001;  /* Sombra padrão para caixas */
+
+  /* Containers */
+  --container-max-width: 800px;   /* Largura máxima dos containers */
+}
+
+/* Utilitários globais */
+body {
+  font-family: var(--font-family);
+  background: var(--background-color);
+  color: var(--text-color);
+}
+
+/* 
+  Define o box-sizing como border-box para todos os elementos,
+  incluindo os pseudo-elementos ::before e ::after.
+  Isso faz com que padding e border sejam incluídos na largura e altura total do elemento,
+  facilitando o controle do layout e evitando problemas de dimensionamento.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}

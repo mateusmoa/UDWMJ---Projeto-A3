@@ -1,0 +1,160 @@
+/* Container com o background definido */
+.container {
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Cabeçalho: posiciona o logo pequeno e o botão de login */
+.header {
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.8); /* Fundo semi-transparente */
+}
+
+.smallLogo {
+  height: 40px; /* ajuste conforme necessário */
+}
+
+.loginButton {
+  font-size: 1rem;
+  color: #fff;
+  background-color: #1a7f37;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.loginButton:hover {
+  background-color: #155f2d;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  transform: translateY(-2px);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Conteúdo centralizado */
+.mainContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+}
+
+.mainLogo {
+  width: 200px; /* Dimensão do logo central */
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: #1a7f37;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: 300;
+  text-shadow: 1px 1px 3px rgba(41, 169, 8, 0.3);
+  color: #36cc04; 
+}
+
+.description {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  font-weight: 300;
+  text-shadow: 1px 1px 3px rgba(41, 169, 8, 0.3);
+  color: #3a3939;
+  max-width: 600px; 
+}
+
+/* Container para os botões de cadastro */
+.buttonContainer {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.button {
+  background-color: #1a7f37;
+  color: #fff;
+  padding: 12px 12px;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #155f2d;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.button:active {
+  transform: translateY(0);
+  box-shadow: none;
+  transition: transform 0.1s, box-shadow 0.1s; 
+}
+
+@media (max-width: 600px) {
+  .mainContent {
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+    max-width: 100%; 
+  }
+
+  .buttonContainer {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .button {
+    width: 100%; 
+    text-align: center; 
+  }
+  .smallLogo {
+    height: 30px; /* ajuste para telas menores */
+  } 
+  .loginButton {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+    border-radius: 4px;
+  }
+}
+
+

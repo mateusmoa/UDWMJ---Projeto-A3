@@ -1,0 +1,70 @@
+@import './components/css/variables.css';
+
+/* Reset básico */
+body, h1, h2, h3, p, ul, ol, li, button, input {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo geral do corpo */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: var(--text-color);
+  line-height: 1.6;
+  padding: 0 var(--spacing-medium);
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Botões */
+button {
+  cursor: pointer;
+  border: none;
+  padding: var(--spacing-small) var(--spacing-medium);
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: white;
+  font-size: var(--font-size-base);
+}
+
+button:hover {
+  background-color: var(--button-hover-color);
+}
+
+/* Containers */
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: var(--spacing-large);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  body {
+    font-size: var(--font-size-base);
+  }
+
+  .container {
+    padding: var(--spacing-medium);
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: var(--font-size-small);
+  }
+
+  .container {
+    padding: var(--spacing-small);
+  }
+}

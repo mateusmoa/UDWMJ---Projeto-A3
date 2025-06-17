@@ -1,0 +1,170 @@
+@import './variables.css';
+
+.register-container {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid var(--primary-color);
+  font-family: Arial, sans-serif;
+}
+
+.register-logo {
+  display: block;
+  margin: 0 auto var(--spacing-medium) auto;
+  width: 100px;
+  height: auto;
+}
+
+.register-user-container {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid var(--primary-color);
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.register-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--secondary-color);
+  font-size: 1.8rem;
+}
+
+.register-description {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--text-color);
+  font-size: 1rem;
+}
+
+.register-success {
+  color: green;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.register-label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  color: var(--text-color);
+  font-size: 1rem;
+}
+
+.register-input {
+  padding: 10px;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+.register-input:focus {
+  outline: none;
+  border-color: var(--button-hover-color);
+  box-shadow: 0 0 5px var(--button-hover-color);
+}
+
+.register-error {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+.register-fieldset {
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.register-legend {
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+.register-checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-small);
+  margin-top: var(--spacing-small);
+}
+
+.register-checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xsmall);
+  font-size: var(--font-size-base);
+  cursor: pointer;
+  padding: 2px 8px 2px 0;
+}
+
+.register-checkbox {
+  accent-color: var(--primary-color);
+  width: 18px;
+  height: 18px;
+  margin-right: 6px;
+}
+
+.register-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.register-button-primary {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.register-button-primary:hover {
+  background-color: var(--button-hover-color);
+}
+
+.register-button-secondary {
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.register-button-secondary:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .register-checkbox-group {
+    flex-direction: column;
+    gap: var(--spacing-xsmall);
+  }
+  .register-buttons {
+    flex-direction: column;
+    gap: var(--spacing-medium);
+  }
+
+    .register-logo {
+    width: 70px;
+    margin-bottom: var(--spacing-small);
+  }
+}

@@ -1,0 +1,211 @@
+@import './variables.css';
+
+.register-restaurant-container {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: var(--spacing-large);
+  background-color: var(--background-color);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--primary-color);
+  font-family: var(--font-family);
+  box-shadow: var(--box-shadow);
+  width: 100%;
+  text-align: center;
+}
+
+.register-logo {
+  display: block;
+  margin: 0 auto var(--spacing-medium) auto;
+  width: 100px;
+  height: auto;
+}
+
+.register-title {
+  color: var(--primary-color);
+  font-size: var(--font-size-title);
+  margin-bottom: var(--spacing-large);
+  text-align: center;
+}
+
+.register-description {
+  color: var(--text-color);
+  font-size: var(--font-size-base);
+  margin-bottom: var(--spacing-medium);
+  text-align: center;
+}
+
+.register-success {
+  color: var(--success-color);
+  text-align: center;
+  margin-bottom: var(--spacing-small);
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-medium);
+}
+
+.register-label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-weight: bold;
+  color: var(--text-color);
+  font-size: var(--font-size-base);
+  margin-bottom: var(--spacing-small);
+}
+
+.register-input,
+.register-textarea {
+  width: 100%;
+  padding: var(--spacing-small);
+  border: 1px solid var(--primary-color);
+  border-radius: var(--border-radius-small);
+  font-size: var(--font-size-base);
+  color: var(--text-color);
+  margin-top: var(--spacing-xsmall);
+  box-sizing: border-box;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.register-input:focus,
+.register-textarea:focus {
+  outline: none;
+  border-color: var(--button-hover-color);
+  box-shadow: 0 0 8px 2px var(--button-hover-color);
+}
+
+.register-input:disabled,
+.register-textarea:disabled {
+  background-color: var(--background-disabled, #f5f5f5);
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.register-error {
+  color: var(--danger-color);
+  font-size: var(--font-size-small);
+  margin-top: 5px;
+}
+
+.register-textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+.register-banner-preview {
+  display: block;
+  margin-top: var(--spacing-small);
+  max-width: 100%;
+  max-height: 120px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 1px solid var(--border-color);
+}
+
+.register-buttons {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-medium);
+  margin-top: var(--spacing-medium);
+}
+
+.register-button-primary,
+.register-button-secondary {
+  width: 100%;
+  max-width: 220px;
+  box-sizing: border-box;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: var(--spacing-small);
+  padding: var(--spacing-small) var(--spacing-large);
+  font-size: var(--font-size-base);
+  font-weight: bold;
+  border-radius: var(--border-radius-small);
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.register-button-primary {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.register-button-primary:hover {
+  background-color: var(--button-hover-color);
+}
+
+.register-button-secondary {
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+
+.register-button-secondary:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* Responsivo para mobile */
+@media (max-width: 600px) {
+  .register-restaurant-container {
+    max-width: 100vw;
+    padding: var(--spacing-medium);
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .register-logo {
+    width: 70px;
+    margin-bottom: var(--spacing-small);
+  }
+
+  .register-title {
+    font-size: 1.15rem;
+    margin-bottom: var(--spacing-medium);
+  }
+
+  .register-description {
+    font-size: var(--font-size-small);
+    margin-bottom: var(--spacing-small);
+  }
+
+  .register-form {
+    gap: var(--spacing-small);
+  }
+
+  .register-label {
+    font-size: var(--font-size-small);
+    margin-bottom: var(--spacing-xsmall);
+  }
+
+  .register-input,
+  .register-textarea {
+    font-size: var(--font-size-small);
+    padding: var(--spacing-xsmall);
+  }
+
+  .register-buttons {
+    flex-direction: column;
+    gap: var(--spacing-small);
+    margin-top: var(--spacing-small);
+  }
+
+  .register-button-primary,
+  .register-button-secondary {
+    max-width: 100%;
+    min-width: 0;
+    padding: 12px 0;
+    font-size: 1rem;
+  }
+
+  .register-banner-preview {
+    max-height: 70px;
+    border-radius: 12px;
+  }
+}

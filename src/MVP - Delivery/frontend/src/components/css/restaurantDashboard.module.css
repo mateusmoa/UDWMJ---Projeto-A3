@@ -1,0 +1,160 @@
+.container {
+  min-height: 100vh;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 80px;
+}
+
+.welcomeSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0 1rem 0;
+}
+.welcome {
+  font-size: 1.7rem;
+  color: #1a7f37;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.restaurantName {
+  color: #1a7f37;
+  font-weight: bold;
+}
+
+.faturamentoSection {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto 1.5rem auto;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #1a7f37;
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  background: #f8fafc;
+  font-size: 1.1rem;
+}
+.faturamentoLabel {
+  color: #1a7f37;
+  font-weight: 500;
+}
+.faturamentoValue {
+  margin-left: 0.5rem;
+  font-weight: bold;
+}
+
+.pedidosSection,
+.cardapioSection,
+.resultadosSection {
+  width: 100%;
+  max-width: 700px;
+  margin: 1rem auto;
+  background: #f8fafc;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 1px 4px #0001;
+}
+.sectionTitle {
+  color: #1a7f37;
+  font-size: 1.2rem;
+  margin-bottom: 0.7rem;
+}
+
+.pedidoItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #e0e7ef;
+}
+.pedidoData {
+  font-size: 0.9rem;
+  color: #888;
+  margin-top: 0.3rem;
+}
+.pedidoStatus {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.entregue {
+  color: green;
+}
+.cancelado {
+  color: red;
+}
+.atrasado {
+  color: orange;
+}
+.preparo {
+  color: #0077cc;
+}
+.pendente {
+  color: #777;
+}
+
+.resultadosBox {
+  border: 1px solid #1a7f37;
+  border-radius: 8px;
+  background: #fff;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #1a7f37;
+}
+
+.cardapioItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #e0e7ef;
+  gap: 1rem;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0 0.5rem 0;
+  background: #fafafa;
+  border-top: 1px solid #ccc;
+  margin-top: 2rem;
+}
+.footerText {
+  font-size: 0.95rem;
+  color: #888;
+}
+.footerContact {
+  margin-top: 0.5rem;
+  color: #222;
+  font-size: 1.1rem;
+}
+
+.empty {
+  color: #666;
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+.loading {
+  color: #888;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+@media (max-width: 700px) {
+  .faturamentoSection,
+  .pedidosSection,
+  .cardapioSection,
+  .resultadosSection {
+    max-width: 98vw;
+    padding: 1rem 0.5rem;
+  }
+}
