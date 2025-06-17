@@ -1,0 +1,464 @@
+@import './variables.css';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.25rem 1rem;
+  max-width: 100vw;
+  box-sizing: border-box;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.menuItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  user-select: none;
+  min-width: 80px;
+}
+
+.menuItem:hover,
+.menuItem:focus {
+  color: var(--primary-color);
+  outline: none;
+  background-color: #e6f7ee;
+  box-shadow: 0 0 6px rgba(26, 127, 55, 0.4);
+  border-radius: 6px;
+}
+
+.menuItem:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 3px;
+}
+
+.menuItemActive {
+  background: #e6f7ee;
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  box-shadow: 0 4px 16px rgba(32, 92, 35, 0.15);
+  transform: translateY(-2px);
+  transition: transform 0.3s ease;
+}
+
+.menuItemExit {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  padding: 0.5rem;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  user-select: none;
+  min-width: 80px;
+  box-shadow: 0 0 4px rgba(255, 0, 0, 0.2);
+}
+
+.menuItemExit:hover,
+.menuItemExit:focus {
+  background-color: #f5c6cb;
+  color: #721c24;
+  box-shadow: 0 0 6px rgba(255, 0, 0, 0.4);
+}
+
+.userHeader {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f3f3f3;
+  border-bottom: 2px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.userInfo h1 {
+  font-size: 1.5rem;
+  color: #1a7f37;
+  margin: 0;
+}
+
+.logoutButton {
+  background: transparent;
+  border: none;
+  color: #1a7f37;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.logoutButton:hover,
+.logoutButton:focus {
+  color: #d32f2f;
+  outline: none;
+}
+
+
+section {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.25rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 5px var(--primary-color);
+  outline: none;
+}
+
+input[type="checkbox"] {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  accent-color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 4px;
+  background-clip: padding-box;
+  background-color: white;
+  box-shadow: 0 0 4px rgba(26, 127, 55, 0.2);
+}
+
+button {
+  padding: 0.75rem 1rem;
+  background-color: #1a7f37;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+button:hover,
+button:focus {
+  background-color: #388e3c;
+  outline: none;
+  box-shadow: 0 0 6px #388e3c;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+button:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 3px;
+}
+
+/* CONFIG SECTION AJUSTADO */
+
+.configSection {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  box-sizing: border-box;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.configSection h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.configItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
+}
+
+.deleteButton {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 0.75rem 1rem;
+  padding-left: 2.75rem;
+  padding-right: 2.75rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.userHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.25rem;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  gap: 1rem;
+  flex-wrap: nowrap;
+}
+
+.logo {
+  height: 40px;
+  object-fit: contain;
+  cursor: pointer;
+  user-select: none;
+}
+
+.userInfo {
+  flex-grow: 1;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: var(--primary-color);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.logoutButton {
+  background: transparent;
+  border: none;
+  color: var(--primary-color);
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  user-select: none;
+  transition: color 0.3s ease;
+}
+
+.logoutButton:hover,
+.logoutButton:focus {
+  color: var(--button-hover-color);
+  outline: none;
+}
+
+.backButtonIcon {
+  background: transparent;
+  border: none;
+  color: var(--primary-color);
+  cursor: pointer;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  user-select: none;
+  transition: color 0.3s ease;
+}
+
+.backButtonIcon:hover,
+.backButtonIcon:focus {
+  color: var(--button-hover-color);
+  outline: none;
+}
+
+
+.deleteButton:hover,
+.deleteButton:focus {
+  background-color: #d32f2f;
+  box-shadow: 0 0 6px rgba(211, 47, 47, 0.4);
+  outline: none;
+}
+
+.processingText {
+  color: #d32f2f;
+  margin-top: 0.5rem;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.menuItemIcon {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 0.25rem;
+  transition: color 0.3s ease;
+}
+
+.menuItemText {
+  font-size: 1.125rem;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.menuItem:hover .menuItemText,
+.menuItem:focus .menuItemText {
+  color: var(--primary-color);
+}
+
+.menuItem:hover .menuItemIcon,
+.menuItem:focus .menuItemIcon {
+  color: var(--button-hover-color);
+}
+
+.backButton {
+  margin-top: 2rem;
+  padding: 0.75rem 1.5rem;
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  transition: background 0.2s;
+  user-select: none;
+  width: auto;
+  min-width: 120px;
+  justify-content: center;
+}
+
+.backButton:hover,
+.backButton:focus {
+  background: var(--button-hover-color);
+  outline: none;
+  box-shadow: 0 0 6px var(--button-hover-color);
+}
+
+.backButton:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 3px;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+
+@media (max-width: 600px) {
+  .container {
+    padding: 1rem 0.5rem;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .menuItem {
+    min-width: 100%;
+    padding: 1rem;
+  }
+
+  .backButton {
+    width: 100%;
+    min-width: auto;
+    padding: 1rem 0;
+    font-size: 1rem;
+  }
+
+  .configSection {
+    padding: 1rem;
+  }
+
+  .configSection h2 {
+    font-size: 1.25rem;
+  }
+
+  form {
+    padding: 1rem;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    font-size: 1rem;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .menuItemIcon {
+    font-size: 2rem;
+  }
+
+  .menuItemText {
+    font-size: 1rem;
+  }
+}
+
+/* Suave transição ao entrar */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

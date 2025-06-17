@@ -1,0 +1,214 @@
+.container {
+  min-height: 100vh;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 80px;
+}
+
+.headerNav {
+  width: 100%;
+  background: #f3f3f3;
+  border-bottom: 2px solid #222;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.logo {
+  height: 38px;
+  width: auto;
+}
+.logoSubtitle {
+  font-size: 0.85rem;
+  color: #1a3d1a;
+  font-weight: 500;
+  margin-left: 4px;
+  letter-spacing: 1px;
+}
+.headerRight {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.statusBtn {
+  border: 1px solid #1a7f37;
+  background: #fff;
+  color: #1a7f37;
+  border-radius: 20px;
+  padding: 0.3rem 1.2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+.statusDot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-left: 6px;
+}
+.headerIcons {
+  display: flex;
+  gap: 12px;
+}
+.icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.welcomeSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0 1rem 0;
+}
+.welcome {
+  font-size: 1.7rem;
+  color: #1a7f37;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.restaurantName {
+  color: #1a7f37;
+  font-weight: bold;
+}
+.headerLogo {
+  width: 80px;
+  margin-top: 0.5rem;
+}
+
+.faturamentoSection {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto 1.5rem auto;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #1a7f37;
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  background: #f8fafc;
+  font-size: 1.1rem;
+}
+.faturamentoLabel {
+  color: #1a7f37;
+  font-weight: 500;
+}
+.faturamentoValue {
+  margin-left: 0.5rem;
+  font-weight: bold;
+}
+
+.pedidosSection, .cardapioSection, .resultadosSection {
+  width: 100%;
+  max-width: 700px;
+  margin: 1rem auto;
+  background: #f8fafc;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 1px 4px #0001;
+}
+.sectionTitle {
+  color: #1a7f37;
+  font-size: 1.2rem;
+  margin-bottom: 0.7rem;
+}
+.pedidoItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #e0e7ef;
+}
+.pedidoData {
+  font-size: 0.9rem;
+  color: #888;
+  margin-left: 1rem;
+}
+.pedidoValores {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.arrow {
+  font-size: 1.5rem;
+  color: #1a7f37;
+}
+.verTodos {
+  text-align: right;
+  color: #1a7f37;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+
+.cardapioHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cardapioItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #e0e7ef;
+  gap: 1rem;
+}
+
+.resultadosBox {
+  border: 1px solid #1a7f37;
+  border-radius: 8px;
+  background: #fff;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #1a7f37;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0 0.5rem 0;
+  background: #fafafa;
+  border-top: 1px solid #ccc;
+  margin-top: 2rem;
+}
+.footerText {
+  font-size: 0.95rem;
+  color: #888;
+}
+.footerContact {
+  margin-top: 0.5rem;
+  color: #222;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 700px) {
+  .faturamentoSection, .pedidosSection, .cardapioSection, .resultadosSection {
+    max-width: 98vw;
+    padding: 1rem 0.5rem;
+  }
+  .headerNav {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem 0.5rem;
+  }
+}
