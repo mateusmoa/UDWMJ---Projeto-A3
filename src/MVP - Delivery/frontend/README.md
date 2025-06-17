@@ -69,4 +69,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-Instalar dependencias do node na pasta na pasta front-end(renomear para "frontend") "npm install"
+Instalar dependencias do node na pasta na pasta front-end "npm install"
